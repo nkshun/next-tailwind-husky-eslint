@@ -6,7 +6,7 @@
             "@/*": ["src/*"],
             "/*": ["*"]
         },
-        "noUncheckedIndexedAccess": true,
+        "noUncheckedIndexedAccess": false,
         "target": "es5",
         "lib": ["dom", "dom.iterable", "esnext"],
         "allowJs": true,

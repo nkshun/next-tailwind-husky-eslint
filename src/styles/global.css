@@ -1,0 +1,33 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.full {
+    @apply w-full px-3;
+}
+.half {
+    @apply w-full md:w-1/2 px-3 mb-6 md:mb-0;
+}
+.input {
+    @apply appearance-none block h-11 w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white;
+}
+
+input[type='radio'] + label span {
+    transition: background 0.2s, transform 0.2s;
+}
+
+input[type='radio'] + label span:hover,
+input[type='radio'] + label:hover span {
+    transform: scale(1.2);
+}
+
+input[type='radio']:checked + label span {
+    @apply bg-primary-500;
+    box-shadow: 0px 0px 0px 3px white inset;
+}
+
+input[type='radio']:checked + label {
+    @apply text-primary-500;
+}
