@@ -1,6 +1,6 @@
 import { Top } from './top';
 
-import Layout from '@/composents/layouts/frame';
+import Layout from '@/components/layouts/frame';
 
 export const TopPage = () => {
     return (

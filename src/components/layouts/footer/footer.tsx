@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { FooterLinks } from './FooterLinks';
 import { FooterTwoRowsCopyright } from './FooterTwoRowsCopyright';
 
-import { Background } from '@/composents/ui/background';
-import { Logo } from '@/composents/ui/logo/logo';
-import { Section } from '@/composents/ui/section/Section';
+import { Background } from '@/components/ui/background';
+import { Logo } from '@/components/ui/logo/logo';
+import { Section } from '@/components/ui/section/Section';
 import { AppConfig } from '@/configs/AppConfig';
 
 const Footer = () => (

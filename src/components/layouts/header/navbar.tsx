@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-import { Background } from '@/composents/ui/background';
-import { Button } from '@/composents/ui/button/button';
-import { Logo } from '@/composents/ui/logo/logo';
-import { NavbarTwoColumns } from '@/composents/ui/navigation';
-import { Section } from '@/composents/ui/section/Section';
+import { Background } from '@/components/ui/background';
+import { Button } from '@/components/ui/button/button';
+import { Logo } from '@/components/ui/logo/logo';
+import { NavbarTwoColumns } from '@/components/ui/navigation';
+import { Section } from '@/components/ui/section/Section';
 
 const Navbar = () => (
     <Background color="bg-gray-100">
