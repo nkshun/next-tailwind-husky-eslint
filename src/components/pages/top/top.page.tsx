@@ -1,4 +1,4 @@
-import { Top } from './top';
+import { Top } from './Top';
 
 import Layout from '@/components/layouts/frame';
 

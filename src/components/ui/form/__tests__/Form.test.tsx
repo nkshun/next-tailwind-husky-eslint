@@ -1,7 +1,7 @@
 import * as z from 'zod';
 
-import { Form } from '../form';
-import { InputField } from '../input-field';
+import { Form } from '../Form';
+import { InputField } from '../fields/InputField';
 
 import { Button } from '@/components/Elements/Button';
 import { rtlRender, screen, waitFor, userEvent } from '@/test/test-utils';

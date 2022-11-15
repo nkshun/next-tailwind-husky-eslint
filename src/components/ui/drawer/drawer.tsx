@@ -2,7 +2,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import * as React from 'react';
-import 'intersection-observer';
+// import 'intersection-observer';
 
 const sizes = {
     sm: 'max-w-md',

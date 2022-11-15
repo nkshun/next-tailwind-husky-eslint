@@ -28,7 +28,7 @@ const Section = (props: ISectionProps) => {
     return (
         <div className={`max-w-screen-xl mx-auto px-3 sm:px-5 lg:px-6 ${props.yPadding ? props.yPadding : 'py-16'}`}>
             {(props.title || props.subtitle || props.description) && (
-                <div className="mb-12 text-center w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto">
+                <div className="text-center w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto">
                     {props.subtitle && <div className="text-primary-500 text-sm font-bold">{props.subtitle}</div>}
                     {props.title && <h2 className={titleClass}>{props.title}</h2>}
                     {props.description && <div className={descriptionClass}>{props.description}</div>}

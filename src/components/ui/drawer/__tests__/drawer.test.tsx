@@ -1,5 +1,5 @@
 import { Button } from '../../Button';
-import { Drawer } from '../drawer';
+import { Drawer } from '../Drawer';
 
 import { useDisclosure } from '@/hooks/useDisclosure';
 import { rtlRender, screen, userEvent, waitFor } from '@/test/test-utils';

@@ -1,11 +1,11 @@
 import { Meta, Story } from '@storybook/react';
 import * as React from 'react';
 
-import { Button } from '../button/button';
+import { Button } from '../button/Button';
 
-import { Form } from './form';
+import { Form } from './Form';
+import { InputField } from './fields/InputField';
 import { FormDrawer } from './form-drawer';
-import { InputField } from './input-field';
 import { SelectField } from './select-field';
 import { TextAreaField } from './textarea-field';
 

@@ -3,11 +3,13 @@
 ```
 src
 ├─ components
-│ ├─ pages     : 1つのページを表すComponent。page.tsxファイルをsrc/pagesでルーティングする
+│ ├─ pages     : 1つのページを表すComponent。
+│ │             　hoge.page.tsx: layoutsにhoge.tsxを嵌めたコンポーネント。src/pages配下のルーティングファイルが参照する。
+│ │             　hoge.tsx: featuresやuiを組み合わせてpageの中身（main部分）となるコンポーネント
 │ ├─ features  : 各機能に関心を持つComponent(例えばuser, article, category...のようなやつ)
 │ ├─ ui        : featureに関心を持たない、見た目を伴うComponent(Buttonとか)
-│ └─ layouts   : uiのうちページを横断するグローバル系のComponent(headerとか）
-├─ configs
+│ └─ layouts   : uiのうちページを横断するグローバル系のComponent(header、sidebar、navigation barとか）
+├─ configs     : 設定ファイルとか
 ├─ hooks       : 複数のComponentで共有したいような汎用的な処理
 ├─ libs        : プロジェクトに依存しないライブラリ実装
 └─ pages       : ルーティングのみの責務。nextjsの機能で配置するだけでルーティングしてくれる。ディレクトリ構成がそのままパスになる。
@@ -41,16 +43,22 @@ hoge/
 
 # 命名規則
 
-ソース
-
--   https://github.com/kettanaito/naming-cheatsheet
-    ディレクトリ名・ファイル名
--   pages ファイルがケバブ必須なので全てケバブケースとする（コンポーネントファイルはパスカルになってる主要 PJ も結構あるので迷ったけど統一する）
+-   関数や変数名
+    -   基本的に[この命名規則](https://github.com/kettanaito/naming-cheatsheet)に従いたい（途中から参考にしててまだ統一できてない）
+-   ファイル名
+    - src/components 配下のtsxファイル
+        - パスカル
+        - 主要な公開リポジトリみた感じコンポーネントファイルは一般的にパスカルになってることが多そう
+    - src/pages 配下のtsxファイル
+        - ケバブ
+        - pages 配下のファイル名がそのまま URL のパスになる仕様上、pages 配下のファイルはケバブが好ましい
+    - tsファイル
+        - キャメル
 
 # Style
 
 -   [tailwindcss](https://tailwindcss.com/)
-    -   大量のクラス名が用意されていてcss網羅してる。用意されたクラス名だけで細かなスタイリングができる。
+    -   大量のクラス名が用意されていて css 網羅してる。用意されたクラス名だけで細かなスタイリングができる。[チートシート](https://nerdcave.com/tailwind-cheat-sheet)
 -   [headlessui/react](https://headlessui.com/)
     -   tailwind でスタイルされたコンポーネントを import して使用できる。複雑なコンポーネントで使用
 -   [heroicon](https://zenn.dev/nino_cast/books/43c539eb47caab/viewer/807f3b)
@@ -81,3 +89,6 @@ hoge/
     -   Next.js のプロジェクトで SEO 管理を簡単にするためのプラグイン
 -   [next/bundle-analyzer](https://fwywd.com/tech/next-bundle-analyzer)
     -   各バンドルサイズを可視化できる
+-   [recoil](https://github.com/facebookexperimental/Recoil)
+    -   [公式ドキュメント](https://recoiljs.org/docs/introduction/getting-started/)
+    -   状態管理ライブラリ

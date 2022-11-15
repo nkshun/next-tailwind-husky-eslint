@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Spinner } from '../spinner';
 
 const variants = {
-    primary: 'bg-blue-600 text-white',
+    primary: 'text-white bg-primary-500',
     inverse: 'bg-white text-blue-600',
     danger: 'bg-red-600 text-white',
 };
@@ -24,6 +24,7 @@ type IconProps =
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     variant?: keyof typeof variants;
     size?: keyof typeof sizes;
+    fill?: boolean;
     isLoading?: boolean;
 } & IconProps;
 
@@ -34,6 +35,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             className = '',
             variant = 'primary',
             size = 'md',
+            fill = false,
             isLoading = false,
             startIcon,
             endIcon,
@@ -49,6 +51,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                     'flex justify-center items-center border boder-gray-300 disabled:opacity-70 disabled::cursor-not-allowed rounded-md shadow-sm font-medium focus:outline-none hover:opacity-80',
                     variants[variant],
                     sizes[size],
+                    `${fill && 'w-full'}`,
                     className
                 )}
                 {...props}

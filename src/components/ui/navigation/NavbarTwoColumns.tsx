@@ -32,19 +32,22 @@ const NavbarTwoColumns = (props: INavbarProps) => {
             </div>
 
             <div className="md:hidden">
-                <button className="p-3 text-gray-900 rounded-md hover:bg-white" onClick={handleShowMenu} type="button">
-                    <svg
-                        className="stroke-current h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    >
-                        <path d="M0 0h24v24H0z" stroke="none" />
-                        <path d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                <button onClick={handleShowMenu} className="relative md:hidden h-5 w-6" type="button">
+                    <span
+                        className={`${
+                            showMenu ? 'transform rotate-45 top-2 w-7 transition duration-300' : 'top-0 w-6'
+                        } h-0.5 inline-block transition-all absolute right-0 bg-black`}
+                    ></span>
+                    <span
+                        className={`${
+                            showMenu ? 'hidden' : 'top-2 w-6'
+                        } h-0.5 inline-block transition-all absolute right-0 bg-black`}
+                    ></span>
+                    <span
+                        className={`${
+                            showMenu ? 'transform -rotate-45 top-2 w-7 transition duration-300' : 'top-4 w-6'
+                        } h-0.5 inline-block transition-all absolute right-0 bg-black`}
+                    ></span>
                 </button>
             </div>
 

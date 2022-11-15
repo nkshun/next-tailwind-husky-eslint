@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 import { Background } from '@/components/ui/background';
-import { Button } from '@/components/ui/button/button';
-import { Logo } from '@/components/ui/logo/logo';
+import { Button } from '@/components/ui/button/Button';
+import { Logo } from '@/components/ui/logo/Logo';
 import { NavbarTwoColumns } from '@/components/ui/navigation';
 import { Section } from '@/components/ui/section/Section';
 
@@ -14,7 +14,7 @@ const Navbar = () => (
                 rightMenu={
                     <>
                         <li>
-                            <Link href="/order">
+                            <Link href="/contract">
                                 <a>
                                     <Button>お申し込み</Button>
                                 </a>

@@ -1,1 +1,1 @@
-export * from './navbar-two-columns';
+export * from './NavbarTwoColumns';

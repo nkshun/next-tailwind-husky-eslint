@@ -1,10 +1,10 @@
 import { ReactNode } from 'react';
 
+import { Meta } from '../../Meta';
 import { Footer } from '../../footer';
-import { Navbar } from '../../header/navbar';
-import { Meta } from '../../meta';
+import { Navbar } from '../../header/Navbar';
 
-import { AppConfig } from '@/configs/AppConfig';
+import { AppConfig } from '@/configs/appConfig';
 
 type Props = {
     children: ReactNode;

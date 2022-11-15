@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 
-import { AppConfig } from '@/configs/AppConfig';
+import { AppConfig } from '@/configs/appConfig';
 
 type IMetaProps = {
     title: string;

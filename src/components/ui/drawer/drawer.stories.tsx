@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react';
 
 import { Button } from '../Button';
 
-import { Drawer } from './drawer';
+import { Drawer } from './Drawer';
 
 import { useDisclosure } from '@/hooks/useDisclosure';
 
